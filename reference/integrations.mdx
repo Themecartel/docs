@@ -1,0 +1,59 @@
+---
+title: "Perkstar Integrations: Connect Your POS and Booking Systems"
+sidebarTitle: "Integrations"
+description: "Connect Perkstar to your POS system or booking platform to automatically issue stamps and points when a sale or appointment is recorded."
+---
+
+Integrations let Perkstar automatically reward customers without staff manually issuing stamps or points at each transaction. By connecting your point-of-sale system or booking platform, you can ensure every qualifying sale or appointment triggers the right reward — consistently and without extra steps for your team.
+
+## How integrations work
+
+When a sale or booking is recorded in your connected system, Perkstar receives the transaction data and automatically issues the configured number of stamps or points to the matching customer's loyalty card. The customer's pass updates in real time, and they receive a notification confirming their new balance. This removes the need for manual scanning at every interaction and reduces the chance of missed rewards.
+
+## Setting up an integration
+
+<Steps>
+  <Step title="Open the Integrations page">
+    In the dashboard, go to **Settings** → **Integrations**.
+  </Step>
+  <Step title="Browse available integrations">
+    Review the list of supported POS systems and booking platforms to find the one that matches your setup.
+  </Step>
+  <Step title="Connect your system">
+    Click **Connect** next to the integration you want to set up.
+  </Step>
+  <Step title="Authorise the connection">
+    Follow the on-screen prompts to authorise Perkstar to connect to your system. This typically involves logging in to your POS or booking account and granting the necessary permissions.
+  </Step>
+  <Step title="Configure the trigger">
+    Set the reward rule for the integration — for example, "issue 1 stamp per transaction" or "issue 10 points per £1 spent". You can also set minimum transaction thresholds if required.
+  </Step>
+  <Step title="Save and go live">
+    Click **Save**. Perkstar will begin issuing rewards automatically from your next recorded transaction.
+  </Step>
+</Steps>
+
+## Webhooks
+
+Perkstar supports webhooks for custom integrations, giving you full flexibility to connect your loyalty programme to any internal or third-party system. To set up a webhook, go to **Settings** → **Integrations** → **Webhooks** and enter your webhook URL. Perkstar will send an HTTP POST request to that URL each time a configured event occurs — such as a customer signing up, earning points, or redeeming a reward.
+
+## Webhook events
+
+Use the following events to trigger actions in your connected systems:
+
+| Event | Description |
+|---|---|
+| `customer.signed_up` | A new customer joined your loyalty programme |
+| `stamp.issued` | A stamp was added to a customer's card |
+| `points.issued` | Points were added to a customer's balance |
+| `reward.redeemed` | A customer redeemed a reward from their card |
+
+Each webhook payload includes the customer ID, card ID, event timestamp, and the relevant transaction data so you can act on the information immediately.
+
+<Note>
+  If the integration you need isn't listed in the dashboard, contact Perkstar support. The integrations catalogue is updated regularly, and the team can advise on availability or custom connection options for your specific system.
+</Note>
+
+<Tip>
+  Use webhooks together with automation platforms like Zapier or Make to connect Perkstar to virtually any tool in your stack — including CRMs, email marketing platforms, spreadsheets, or internal databases — without writing any code.
+</Tip>

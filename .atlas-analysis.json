@@ -1,16 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "name": "Perkstar",
+  "projectType": "saas",
+  "projectName": "Perkstar",
+  "projectDescription": "Perkstar is a digital loyalty platform that lets businesses create branded loyalty cards for Apple Wallet and Google Wallet — no app download required.",
   "theme": "almond",
-  "colors": {
-    "primary": "#4b4b4b",
-    "light": "#ffffff"
-  },
-  "logo": {
-    "light": "https://media.brand.dev/57de8b6b-c625-494a-82d5-e6ac555740e3.png",
-    "dark": "https://media.brand.dev/57de8b6b-c625-494a-82d5-e6ac555740e3.png"
-  },
-  "favicon": "https://media.brand.dev/952171c5-defb-452d-b57d-2a5adb46d76f.png",
+  "primaryColor": "#4b4b4b",
+  "lightColor": "#ffffff",
+  "darkColor": null,
   "navigation": {
     "tabs": [
       {
@@ -81,11 +76,29 @@
       }
     ]
   },
-  "navbar": {
-    "primary": {
-      "type": "button",
-      "label": "Sign up free",
-      "href": "https://dashboard.perkstar.co.uk/sign-up"
-    }
-  }
+  "keyFeatures": [
+    "Digital loyalty cards for Apple Wallet and Google Wallet",
+    "Stamp cards, points cards, membership cards, cashback cards, gift cards, and more",
+    "No app download required for customers",
+    "QR code, link, email, and SMS card sharing",
+    "Perkstar Scanner app for in-store stamp and points issuance",
+    "Automated campaigns — birthday rewards, win-back offers, milestone perks",
+    "Push notifications and wallet messages",
+    "Customer sign-up forms with custom fields",
+    "Analytics dashboard",
+    "7-day free trial on all plans"
+  ],
+  "publicApiSurface": [
+    "Dashboard — loyalty card designer",
+    "Dashboard — customer management",
+    "Dashboard — automation rules",
+    "Dashboard — analytics",
+    "Perkstar Scanner app (iOS & Android)",
+    "Card sharing via QR code / link / email / SMS",
+    "Apple Wallet pass integration",
+    "Google Wallet pass integration",
+    "Starter plan (£19/month, 1 card, 250 customers)",
+    "Growth plan (£39/month, 3 cards, 1,000 customers)",
+    "Pro plan (£79/month, unlimited cards & customers)"
+  ]
 }
